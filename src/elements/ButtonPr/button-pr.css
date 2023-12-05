@@ -1,0 +1,23 @@
+.send {
+    display: flex;
+    justify-content: center;
+}
+.sendInfo {
+    background-color: var(--grisColor);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 100%;
+}
+.sendInfo:hover {
+    cursor: pointer;
+    background-color: var(--grisColorHover);
+}
+@media (min-width: 480px) {
+    .sendInfo {
+        width: 15rem;
+    }
+}

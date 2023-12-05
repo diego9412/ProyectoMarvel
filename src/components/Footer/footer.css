@@ -1,0 +1,27 @@
+footer .footer-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+footer img {
+    width: 40px;
+}
+
+.footer-info-title h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.social-media a,
+.contact-us a {
+    margin: 0 2rem;
+}
+
+.section-developed {
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    padding-top: 1rem;
+}

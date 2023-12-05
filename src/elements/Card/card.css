@@ -1,0 +1,22 @@
+.card {
+    border-radius: 1rem;
+}
+
+.card img {
+    height: 20rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-body .card-title {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.card-body a {
+    display: block;
+}
