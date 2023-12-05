@@ -24,3 +24,18 @@ body {
     padding: 0;
     font-family: var(--docFont);
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #433f3f;
+    font-weight: bold;
+    text-transform: uppercase;
+}

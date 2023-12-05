@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <nav class="navbar navbar-expand-md bg-secondary-subtle p-2">
       <div class="container-fluid">
-        <NavLink class="navbar-brand" to="/movies">
+        <NavLink class="navbar-brand" to="/comics">
           <img
             src="/src/assets/Logo.png"
             alt="Index"
@@ -27,23 +27,23 @@ export default function Header() {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fs-3" aria-current="page" href="#">
-                Home
+              <NavLink className="nav-link fs-3" to="/comics">
+                Comics
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="#">
+                About us
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-3" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3" href="#">
-                Pricing
+                Contact us
               </a>
             </li>
           </ul>
           <span class="navbar-text">
-            <NavLink className="nav-link fs-3" to="/">
+            <NavLink className="nav-link fs-3" to="/login">
               Login
             </NavLink>
           </span>

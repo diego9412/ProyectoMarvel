@@ -1,5 +1,6 @@
 import React from "react";
 import "./card.css";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
@@ -9,9 +10,9 @@ const Card = (props) => {
         <div className="card-body">
           <h5 className="card-title text-center">{props.cardTitle}</h5>
           <p className="card-text">{props.cardDescription}</p>
-          <a href="#" className="btn btn-primary fs-4">
+          <Link to={`/comics/${props.id}`} className="btn btn-primary fs-4">
             More Info
-          </a>
+          </Link>
         </div>
       </div>
     </>

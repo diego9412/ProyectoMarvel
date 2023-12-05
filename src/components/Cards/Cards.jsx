@@ -17,23 +17,25 @@ const Cards = (props) => {
     const requestApi = async () => {
       try {
         const answer = await axios.get(url);
-        setDatos(answer.data.data.results);
         console.log(datos);
+        setDatos(answer.data.data.results);
       } catch (error) {
         console.error("Hubo un error: ", error);
       }
     };
     requestApi();
-  }, []);
+  }, [url]);
 
-  https: return (
+  return (
     <main className="container">
+      <h1>Our Comics</h1>
       <div className="cards">
         {datos.map((item) => (
           <Card
             key={item.id}
             cardPath={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
             cardTitle={item.title}
+            id={item.id}
           ></Card>
         ))}
         {/* <Card
