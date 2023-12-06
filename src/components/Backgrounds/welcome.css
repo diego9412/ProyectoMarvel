@@ -28,3 +28,20 @@
     background-color: #ac591a;
 }
 
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contactUs {
+        flex-direction: row;
+    }
+}
+
+.contactUs img {
+    width: 40rem;
+}
+
