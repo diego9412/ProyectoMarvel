@@ -1,8 +1,6 @@
 .form-container {
-    /* background-image: url('../../assets/marvel-hero.jpg');
-    background-position: center center;
+    background-image: url("/public/iron-man.png");
     background-repeat: no-repeat;
-    background-size: cover; */
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -15,10 +13,12 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3rem;
+    color: white;
 }
 
 .form {
-    background-color: var(--mainColor);
+    background-color: rgb(147, 118, 43);
+    color: white;
     margin: 0 auto;
     width: 90%;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(125, 125, 125, 1);

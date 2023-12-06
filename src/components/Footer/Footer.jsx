@@ -9,7 +9,7 @@ import emailLogo from "/email.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-subtle p-4">
+    <footer className="p-4">
       <section className="footer-info">
         <div className="footer-info-title">
           <h3>Marvel World</h3>

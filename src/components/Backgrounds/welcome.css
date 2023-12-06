@@ -1,0 +1,30 @@
+.welcome {
+    background-image: url("/public/spiderman.png");
+    background-position: top;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    color: rgb(102, 19, 19);
+    font-size: 5rem;
+}
+
+.welcome .welcome-button {
+    background-color: #f78f3f;
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.welcome .welcome-button:hover {
+    background-color: #ac591a;
+}
+

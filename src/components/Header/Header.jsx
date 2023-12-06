@@ -1,16 +1,16 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoMarvel from "/Logo.png";
 
 export default function Header() {
   return (
-    <nav class="navbar navbar-expand-md bg-secondary-subtle p-2">
-      <div class="container-fluid">
-        <NavLink class="navbar-brand" to="/comics">
+    <nav className="navbar navbar-expand-md p-2">
+      <div className="container-fluid">
+        <NavLink className="navbar-brand" to="/">
           <img src={logoMarvel} alt="Index" className="text-white" width={70} />
         </NavLink>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarText"
@@ -18,27 +18,27 @@ export default function Header() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
               <NavLink className="nav-link fs-3" to="/comics">
                 Comics
               </NavLink>
             </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3" href="#">
+            <li className="nav-item">
+              <Link className="nav-link fs-3" to="/aboutUs">
                 About us
-              </a>
+              </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3" href="#">
+            <li className="nav-item">
+              <Link className="nav-link fs-3" to="/contactUs">
                 Contact us
-              </a>
+              </Link>
             </li>
           </ul>
-          <span class="navbar-text">
+          <span className="navbar-text">
             <NavLink className="nav-link fs-3" to="/login">
               Login
             </NavLink>
