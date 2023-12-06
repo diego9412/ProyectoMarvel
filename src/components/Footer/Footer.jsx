@@ -1,5 +1,11 @@
 import React from "react";
 import "./footer.css";
+import facebookLogo from "/facebook.svg";
+import instagramLogo from "/instagram.svg";
+import linkedinLogo from "/linkedin.svg";
+import twitterLogo from "/twitter.svg";
+import phoneLogo from "/phone.svg";
+import emailLogo from "/email.svg";
 
 const Footer = () => {
   return (
@@ -12,16 +18,16 @@ const Footer = () => {
           <h3>Follow us</h3>
           <div className="social-media">
             <a href="https://www.facebook.com/" target="_blank">
-              <img src="/src/assets/facebook.svg" alt="Facebook" />
+              <img src={facebookLogo} alt="Facebook" />
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-              <img src="/src/assets/instagram.svg" alt="Instagram" />
+              <img src={instagramLogo} alt="Instagram" />
             </a>
             <a href="https://www.linkedin.com/" target="_blank">
-              <img src="/src/assets/linkedin.svg" alt="Linkedin" />
+              <img src={linkedinLogo} alt="Linkedin" />
             </a>
             <a href="https://twitter.com/" target="_blank">
-              <img src="/src/assets/twitter.svg" alt="Twitter" />
+              <img src={twitterLogo} alt="Twitter" />
             </a>
           </div>
         </div>
@@ -29,10 +35,10 @@ const Footer = () => {
           <h3>Contact us</h3>
           <div className="contact-us">
             <a href="">
-              <img src="/src/assets/phone.svg" alt="Phone" />
+              <img src={phoneLogo} alt="Phone" />
             </a>
             <a href="">
-              <img src="/src/assets/email.svg" alt="Email" />
+              <img src={emailLogo} alt="Email" />
             </a>
           </div>
         </div>

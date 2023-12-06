@@ -1,17 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logoMarvel from "/Logo.png";
 
 export default function Header() {
   return (
     <nav class="navbar navbar-expand-md bg-secondary-subtle p-2">
       <div class="container-fluid">
         <NavLink class="navbar-brand" to="/comics">
-          <img
-            src="/src/assets/Logo.png"
-            alt="Index"
-            className="text-white"
-            width={70}
-          />
+          <img src={logoMarvel} alt="Index" className="text-white" width={70} />
         </NavLink>
         <button
           class="navbar-toggler"
