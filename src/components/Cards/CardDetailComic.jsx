@@ -10,7 +10,7 @@ const CardDetailComic = () => {
   const publicKey = "77d5d2752c62c83e2d997a5755e3b5aa";
   const hash = "cd8d6c6f7375aeaf8b2864d5e1dd76ac";
   const category = "comics";
-  const url = `http://gateway.marvel.com/v1/public/${category}/${id}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+  const url = `https://gateway.marvel.com/v1/public/${category}/${id}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
 
   useEffect(() => {
     const requestApi = async () => {

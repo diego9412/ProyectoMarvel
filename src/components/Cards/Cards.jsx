@@ -11,7 +11,7 @@ const Cards = (props) => {
   //developer.marvel.com/documentation/authorization
   // https://www.md5hashgenerator.com/ ts, private public
   const category = "comics";
-  const url = `http://gateway.marvel.com/v1/public/${category}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
+  const url = `https://gateway.marvel.com/v1/public/${category}?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
 
   useEffect(() => {
     const requestApi = async () => {
