@@ -3,22 +3,15 @@ import "./login.css";
 import InputProject from "../../elements/InputProject/InputProject";
 import Button from "../../elements/ButtonPr/ButtonPr";
 
-export default function Login({ setUser }) {
-  const [nombre, setNombre] = useState("");
-  const [contrasena, setContrasena] = useState("");
-  const [error, setError] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (nombre === "" || contrasena === "") {
-      setError(true);
-      return;
-    }
-    setError(false);
-    setUser([nombre]);
-  };
-
+export default function Login({
+  setUser,
+  error,
+  nombre,
+  setNombre,
+  contrasena,
+  setContrasena,
+  handleSubmit,
+}) {
   return (
     <section className="form-container">
       <form className="form" onSubmit={handleSubmit}>
@@ -39,16 +32,13 @@ export default function Login({ setUser }) {
           value={contrasena}
           onChange={(e) => setContrasena(e.target.value)}
         />
-        <p className="newMember">
-          Are you new? <a href="#">Register here</a>
-        </p>
+        {error && <p className="fs-3 text-center text-danger">{error}</p>}
         <Button
           buttonType="submit"
           buttonText="Login Now"
           buttonClass="sendInfo"
         />
       </form>
-      {/* {error && <p>Campo Obligatorio</p>} */}
     </section>
   );
 }

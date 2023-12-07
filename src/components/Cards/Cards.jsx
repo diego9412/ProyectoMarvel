@@ -26,6 +26,10 @@ const Cards = (props) => {
     requestApi();
   }, [url]);
 
+  const handleLogOut = () => {
+    setUser([]);
+  };
+
   return (
     <main className="container">
       <h1>Our Comics</h1>
@@ -38,11 +42,6 @@ const Cards = (props) => {
             id={item.id}
           ></Card>
         ))}
-        {/* <Card
-          cardPath=""
-          cardTitle="Marvel Comic"
-          cardDescription="Hola mundo"
-        ></Card> */}
       </div>
     </main>
   );

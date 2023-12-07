@@ -6,9 +6,9 @@ const Welcome = () => {
   return (
     <main className="welcome">
       <h1>Welcome to Marvel's World</h1>
-      {/* <Link className="welcome-button" to={"/comics"}>
-        Comics List
-      </Link> */}
+      <Link className="welcome-button" to={"/Login"}>
+        Login
+      </Link>
     </main>
   );
 };

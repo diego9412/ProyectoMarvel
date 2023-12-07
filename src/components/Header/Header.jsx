@@ -1,8 +1,10 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 import logoMarvel from "/Logo.png";
 
-export default function Header() {
+export default function Header({ handleLogOut }) {
+  const loginPage = localStorage.getItem("login");
+
   return (
     <nav className="navbar navbar-expand-md p-2">
       <div className="container-fluid">
@@ -23,11 +25,6 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link fs-3" to="/comics">
-                Comics
-              </NavLink>
-            </li>
-            <li className="nav-item">
               <Link className="nav-link fs-3" to="/aboutUs">
                 About us
               </Link>
@@ -37,12 +34,36 @@ export default function Header() {
                 Contact us
               </Link>
             </li>
+            {loginPage ? (
+              <>
+                <li className="nav-item">
+                  <NavLink className="nav-link fs-3" to="/comics">
+                    Comics
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link fs-3"
+                    to="/"
+                    onClick={handleLogOut}
+                  >
+                    LogOut
+                  </NavLink>
+                </li>
+                {/* <span className="navbar-text">
+                  <NavLink
+                    className="nav-link fs-3"
+                    to="/login"
+                    onClick={handleLogOut}
+                  >
+                    Logout
+                  </NavLink>
+                </span> */}
+              </>
+            ) : (
+              Navigate("/")
+            )}
           </ul>
-          <span className="navbar-text">
-            <NavLink className="nav-link fs-3" to="/login">
-              Login
-            </NavLink>
-          </span>
         </div>
       </div>
     </nav>

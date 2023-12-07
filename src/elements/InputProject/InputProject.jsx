@@ -9,7 +9,6 @@ export default function InputProject(props) {
           type={props.inputType}
           id={props.identifier}
           placeholder={props.placeholder}
-          required
         />
       </div>
     </>
